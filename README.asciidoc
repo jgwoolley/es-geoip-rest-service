@@ -1,0 +1,16 @@
+= Elasticsearch Maxmind Geoip Rest Service
+
+Trying to setup my the Elasticsearch GeoIP processor without access to the Maxmind endpoints. Elasticsearch documentation didn't seem to work because it requires a special API to return the locations of the geoip maxmind db files.
+
+== Resources
+
+- link:https://github.com/elastic/elasticsearch/blob/main/docs/reference/ingest/processors/geoip.asciidoc[]
+- link:https://www.elastic.co/guide/en/elasticsearch/reference/current/geoip-processor.html[]
+- link:https://blog.maxmind.com/2020/09/enriching-mmdb-files-with-your-own-data-using-go/[]
+- link:https://www.geonames.org/export/[]
+- link:https://github.com/maxmind/MaxMind-DB/blob/main/pkg/writer/geoip2.go[]
+
+== Files
+
+- link:./restsrc[The GeoIP endpoint for Elasticsearch]
+- link:./main.go[Generates maxmind database files from csv based of Maxmind defaults]

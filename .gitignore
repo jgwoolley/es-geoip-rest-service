@@ -1,0 +1,4 @@
+*.mmdb
+input/*/*.csv
+input/*/*.txt
+.vscode
